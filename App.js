@@ -4,11 +4,11 @@ import { StyleSheet, Text, View } from 'react-native';
 import Dashboard from './components/dashboard';
 import Home from './components/home';
 import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/native-stack';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 export default function App() {
 
-  const MainNavigator = createStackNavigator();
+  const MainNavigator = createNativeStackNavigator();
 
   return (
     <View style={styles.container}>

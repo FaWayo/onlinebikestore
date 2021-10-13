@@ -1,5 +1,5 @@
 import React from "react";
-import {View, Text, Image, StyleSheet, Button} from "react-native";
+import {View, Text, Image, StyleSheet, TouchableOpacity} from "react-native";
 import { AntDesign } from '@expo/vector-icons';
 
 
@@ -28,7 +28,7 @@ const dashboard = () => {
                 <Text style={{fontSize: 20, color: 'white', marginLeft:10}}>Login with Apple</Text>
             </TouchableOpacity>
 
-            <Text>Not a member? <Text>Sign up</Text></Text>
+            <Text style={{marginTop: 10, fontSize:20}}>Not a member? <Text style={{color: "orange"}}>Sign up</Text></Text>
         </View>
     )
 }
