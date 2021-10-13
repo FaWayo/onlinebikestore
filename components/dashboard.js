@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     container: {
 
         flex: 1,
-        marginTop: 150,
+        marginTop: 120,
         height: '100%',
         alignItems: "center"
     },
@@ -81,6 +81,7 @@ const styles = StyleSheet.create({
         padding: 10,
         paddingHorizontal: 60,
         borderRadius: 10,
+        marginTop: 10
 
     }
 })
