@@ -4,7 +4,7 @@ import { AntDesign } from '@expo/vector-icons';
 
 
 
-const dashboard = () => {
+const dashboard = ({navigation}) => {
     return(
         <View style = {styles.container}>
             <Image
@@ -17,18 +17,23 @@ const dashboard = () => {
             <Text style={styles.welcomeText2}>Power Bike Shop</Text>
 
             <TouchableOpacity
+            onPress = {() => navigation.navigate('Home')}
+
+            activeOpacity={0.8}
+
             style={styles.gmailbutton}>
                 <AntDesign name="google" size={24} color="black" />
               <Text style={{ fontSize: 20, marginLeft:10}}>Login with Gmail</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
+            onPress = {() => navigation.navigate('Home')}
              style={styles.applebutton}>
                  <AntDesign name="apple1" size={24} color="white" />
                 <Text style={{fontSize: 20, color: 'white', marginLeft:10}}>Login with Apple</Text>
             </TouchableOpacity>
 
-            <Text style={{marginTop: 10, fontSize:20}}>Not a member? <Text style={{color: "orange"}}>Sign up</Text></Text>
+            <Text style={{marginTop: 10, fontSize:16}}>Not a member? <Text style={{color: "orange"}}>Sign up</Text></Text>
         </View>
     )
 }
@@ -38,7 +43,7 @@ const styles = StyleSheet.create({
     container: {
 
         flex: 1,
-        marginTop: 120,
+        marginTop: 100,
         height: '100%',
         alignItems: "center"
     },
